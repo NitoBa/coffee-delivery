@@ -1,0 +1,22 @@
+@import '../../../styles/themes/default/fonts.scss';
+
+.container {
+  height: 4.6rem;
+  background-color: var(--yellow);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem, 0.8rem;
+  border-radius: 0.6rem;
+  width: 100%;
+
+  &:not(:disabled):hover {
+    background-color: var(--yellowDark);
+  }
+
+  .title {
+    color: var(--white);
+    @include ComponentsButtonG;
+  }
+}

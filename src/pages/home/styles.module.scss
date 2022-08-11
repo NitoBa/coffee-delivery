@@ -1,0 +1,109 @@
+@import '../../styles/themes/default/fonts.scss';
+
+.container {
+  width: 100%;
+  .sectionLanding {
+    background-image: url('../../assets/images/Background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .contentLanding {
+      display: flex;
+      justify-content: space-between;
+      gap: 5.6rem;
+      align-items: center;
+      padding: 9.4rem 16rem;
+      .sectionLandingLeft {
+        max-width: 56.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        .sectionTitle {
+          h1 {
+            @include TitleXLarge;
+            font-family: 'Baloo 2', cursive;
+            color: var(--title);
+          }
+
+          p {
+            @include TextLarge;
+            color: var(--subtitle);
+          }
+        }
+
+        .iconsText {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.6rem;
+          margin-top: 6.6rem;
+
+          .iconText {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            > div {
+              &.yellowDark {
+                background-color: var(--yellowDark);
+              }
+
+              &.brown {
+                background-color: var(--text);
+              }
+
+              &.yellow {
+                background-color: var(--yellow);
+              }
+
+              &.purple {
+                background-color: var(--purple);
+              }
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 3.2rem;
+              height: 3.2rem;
+              border-radius: 50%;
+              svg {
+                width: 1.6rem;
+                height: 1.6rem;
+                color: var(--white);
+              }
+            }
+
+            span {
+              @include TextMedium;
+              color: var(--text);
+            }
+          }
+        }
+      }
+
+      .landingImage {
+        //   width: 47.6rem;
+      }
+    }
+  }
+
+  .coffeesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3.2rem 16rem;
+
+    h3 {
+      @include TitleLarge;
+      font-family: 'Baloo 2', cursive;
+      color: var(--subtitle);
+      margin-bottom: 3.2rem;
+    }
+
+    .coffeesGallery {
+      // grid-template-columns: repeat(auto-fit, minmax(25.6rem, 1fr));
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3.2rem;
+    }
+  }
+}

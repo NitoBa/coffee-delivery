@@ -1,0 +1,41 @@
+@import '../../../styles/themes/default/fonts.scss';
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--card);
+  padding: 0.8rem 0.4rem;
+  gap: 5.9rem;
+  width: 36.8rem;
+
+  .trailing {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    img {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      h4 {
+        color: var(--subtitle);
+        @include TextMedium;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+  }
+  .leading {
+    align-self: flex-start;
+    span {
+      color: var(--text);
+      @include TextMediumBold;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../styles/themes/default/fonts.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  gap: 0.4rem;
+  height: 4.2rem;
+  background: var(--input);
+  border: 1px solid var(--button);
+  border-radius: 0.4rem;
+  color: var(--text);
+  transition: all 0.2s;
+
+  @include TextSmall;
+
+  &::placeholder {
+    color: var(--label);
+  }
+
+  &:focus {
+    outline: 1px solid var(--yellowDark);
+  }
+  &.full {
+    width: 100%;
+  }
+}

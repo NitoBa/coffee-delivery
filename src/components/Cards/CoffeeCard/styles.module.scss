@@ -1,0 +1,73 @@
+@import '../../../styles/themes/default/fonts.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.6rem 3.6rem;
+  background-color: var(--card);
+  width: 25.6rem;
+  height: 31rem;
+  padding: 2rem;
+  position: relative;
+
+  .image {
+    width: 12rem;
+    height: 12rem;
+    margin-top: -4.2rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.6rem;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--yellowLight);
+      color: var(--yellow);
+      border-radius: 99999px;
+      height: 2.1rem;
+      padding: 0.4rem 0.8rem;
+
+      @include ComponentsTag;
+    }
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+    .title {
+      @include TitleSmall;
+      color: var(--title);
+      font-family: 'Baloo 2', cursive;
+    }
+    .description {
+      color: var(--label);
+      @include TextSmall;
+    }
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 3.3rem;
+    .price {
+      font-family: 'Baloo 2', cursive;
+      @include TitleMedium;
+      color: var(--text);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@mixin TitleXLarge {
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 130%;
+}
+
+@mixin TitleLarge {
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 130%;
+}
+
+@mixin TitleMedium {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 130%;
+}
+
+@mixin TitleSmall {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 130%;
+}
+
+@mixin TitleXSmall {
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+
+@mixin TextLarge {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 130%;
+}
+
+@mixin TextLargeBold {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+}
+
+@mixin TextMedium {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+@mixin TextMediumBold {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 130%;
+}
+
+@mixin TextSmall {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 130%;
+}
+
+@mixin TextSmallBold {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 130%;
+}
+
+@mixin ComponentsTag {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 130%;
+}
+
+@mixin ComponentsButtonG {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+}
+
+@mixin ComponentsButtonS {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 160%;
+}

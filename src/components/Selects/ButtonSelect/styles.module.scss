@@ -1,0 +1,33 @@
+@import '../../../styles/themes/default/fonts.scss';
+
+.container {
+  height: 3.2rem;
+  background-color: var(--button);
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem;
+  gap: 1.2rem;
+  border-radius: 0.6rem;
+
+  &:hover {
+    background-color: var(--hover);
+  }
+
+  svg {
+    color: var(--purple);
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .title {
+    color: var(--text);
+    @include ComponentsButtonS;
+  }
+
+  &.selected {
+    background-color: var(--purpleLight);
+    border: 1px solid var(--purple);
+  }
+}

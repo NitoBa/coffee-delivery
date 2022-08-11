@@ -1,0 +1,59 @@
+@import '../../../styles/themes/default/fonts.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  transition: all 0.3s;
+  position: relative;
+
+  svg {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  &.purple {
+    background-color: var(--purpleDark);
+    svg {
+      color: var(--card);
+    }
+
+    &:hover {
+      background-color: var(--purple);
+    }
+  }
+
+  &.yellow {
+    background-color: var(--yellowLight);
+    svg {
+      color: var(--yellowDark);
+    }
+
+    &:hover {
+      background-color: var(--yellow);
+      svg {
+        color: var(--yellowLight);
+      }
+    }
+  }
+
+  .tagProductCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -0.8rem;
+    right: -0.8rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background-color: var(--yellowDark);
+    color: var(--white);
+
+    @include TextSmallBold;
+  }
+}

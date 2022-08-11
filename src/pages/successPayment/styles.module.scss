@@ -1,0 +1,71 @@
+@import '../../styles/themes/default/fonts.scss';
+.container {
+  padding: 9.4rem 16rem;
+  header {
+    margin-bottom: 4rem;
+    h1 {
+      @include TitleLarge;
+      color: var(--yellowDark);
+      font-family: 'Baloo 2', cursive;
+    }
+    p {
+      color: var(--subtitle);
+      @include TextLarge;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10.2rem;
+    .orderInfo {
+      height: 27rem;
+      width: 52.6rem;
+      border: 1px solid transparent;
+      background: linear-gradient(to right, white, white),
+        linear-gradient(to right, #dbac2c, #8047f8);
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 4rem;
+      border-radius: 0.6rem 3.6rem;
+
+      .cardInfoContainer {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        color: var(--text);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+
+        .contentCardInfo {
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 3.2rem;
+            height: 3.2rem;
+          }
+
+          h4 {
+            font-weight: 400;
+          }
+          span {
+            font-weight: 700;
+          }
+        }
+        p {
+          display: block;
+        }
+        strong {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+  @media screen and (max-width: 600px) {
+    font-size: calc(100vw / 600 * 10);
+  }
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled:hover {
+  cursor: not-allowed;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  cursor: pointer;
+}
