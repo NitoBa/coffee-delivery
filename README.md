@@ -1,13 +1,17 @@
+<p align="center">
+  <img alt="preview image" src=".github/preview.png">
+</p>
 
 <p align="center">
   <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=7b6ef6&labelColor=120f31" alt="License">
-  
-  <img src="https://img.shields.io/github/forks/NitoBa/the-movie-app?label=forks&message=MIT&color=7b6ef6&labelColor=120f31" alt="Forks">
 
-  <img src="https://img.shields.io/github/stars/NitoBa/the-movie-app?label=stars&message=MIT&color=7b6ef6&labelColor=120f31" alt="Stars">
+<img src="https://img.shields.io/github/forks/NitoBa/the-movie-app?label=forks&message=MIT&color=7b6ef6&labelColor=120f31" alt="Forks">
+
+<img src="https://img.shields.io/github/stars/NitoBa/the-movie-app?label=stars&message=MIT&color=7b6ef6&labelColor=120f31" alt="Stars">
 </p>
 
 <h1 align="center">
+    Coffe Delivery
 </h1>
 
 <br>
@@ -43,7 +47,9 @@ npm run dev
 ## 🔖 Layout
 
 You can view the layout through the link below:
+
 - [Layout](https://www.figma.com/file/bNtZc6XVqqWGvu26ywpVrY/Coffee-Delivery-(Copy)?node-id=0%3A1)
+- [LivePreview](https://my-coffee-delivery.vercel.app/)
 
 ## 📝 License
 
@@ -52,3 +58,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Made with 💜 by [Bruno Alves](https://nito-dev.vercel.app/) 👋
+
